@@ -1,0 +1,218 @@
+.menu {
+  position: fixed;
+  width: 50px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 0px 0px;
+  color: hwb(253 35% 55%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: 0.4s all;
+  overflow: hidden;
+  box-shadow: 0px -10px 13px #969595a6;
+}
+
+.menu.expanded {
+  width: 230px;
+}
+
+.menu .menu-toggler {
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  display: flex;
+  box-shadow: 5px 1px 10px #ccc;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu.expanded .menu-toggler {
+  gap: 5px;
+}
+
+.menu .menu-toggler svg {
+  width: 35px;
+  height: 35px;
+}
+
+.menu .menu-toggler a {
+  display: flex;
+}
+
+.menu .menu-toggler img {
+  display: none;
+}
+
+.menu.expanded .menu-toggler img {
+  display: inline;
+  width: 140px;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.menu-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.5s all;
+  gap: 10px;
+}
+.menu-option .store-icon {
+  fill: #5f5973;
+}
+.menu.expanded .menu-option.ar {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.navbar-option {
+  display: none;
+}
+
+.menu-option:hover {
+  background-color: #dbd6ff;
+  color: #4f39f4;
+}
+.menu-option:hover .store-icon {
+  fill: #4f39f4;
+}
+.menu-option.active {
+  background-color: #dbd6ff;
+  border-left: 4px solid #4f39f4;
+  color: #4f39f4;
+}
+.menu-option.active .store-icon {
+  fill: #4f39f4;
+}
+.menu-option-icon {
+  width: 30px;
+}
+
+.menu-option-name {
+  display: none;
+  font-size: 22px;
+  width: 150px;
+  text-align: left;
+}
+
+.menu.expanded .menu-option {
+  justify-content: flex-start;
+  padding-left: 10px;
+  transition: all 0.5s;
+}
+
+.menu.expanded .menu-option:hover {
+  padding-left: 15px;
+}
+
+.menu.expanded .menu-option-name {
+  display: block;
+}
+
+.menu .adds {
+  display: none;
+  padding: 0 15px;
+}
+.menu .adds img {
+  width: 100%;
+  cursor: pointer;
+}
+.menu .adds img:last-child {
+  margin-bottom: 20px;
+}
+.menu.expanded .adds {
+  display: block;
+}
+
+/* Handle Mobile Phones */
+@media (max-width: 768px) {
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+    height: auto !important;
+  }
+  .navbar-option {
+    display: flex;
+  }
+  .menu-toggler {
+    display: none !important;
+  }
+  .menu.navbar-expanded {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    padding-top: 50px;
+  }
+
+  .menu.navbar-expanded .menu-options {
+    margin-bottom: 0px !important;
+  }
+
+  .menu.navbar-expanded .menu-option {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .menu.navbar-expanded .menu-option.ar {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  .menu.navbar-expanded .menu-option:hover {
+    padding-left: 15px;
+  }
+  .menu.navbar-expanded .menu-option-name {
+    display: block;
+  }
+  .menu.navbar-expanded .adds {
+    display: block;
+  }
+}
+/* Handle Mobile Phones */
+
+/* Dark mode Changes */
+
+.dark .menu {
+  background-color: #101010;
+  box-shadow: 1px -10px 13px #000;
+  color: #939393;
+}
+.dark .menu .menu-toggler {
+  box-shadow: 5px -3px 10px #000;
+}
+
+.dark .menu-option.active {
+  background-color: #3d3d3d;
+  border-left: 4px solid #939393;
+  color: #c3c3c3;
+}
+.dark .menu-option:hover {
+  background-color: #3d3d3d;
+  color: #c3c3c3;
+}
+.dark .store-icon {
+  fill: #939393;
+}
+.dark .menu-option.active .store-icon {
+  fill: #939393;
+}
+.dark .menu-option:hover .store-icon {
+  fill: #939393;
+}
+
+/* Dark mode Changes */

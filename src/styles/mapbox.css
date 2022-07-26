@@ -1,0 +1,12 @@
+.mapboxgl-map {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px;
+}
+.img-marker {
+  border-radius: 10px !important;
+  height: 50px !important;
+  width: 50px !important;
+  object-fit: cover;
+  cursor: pointer;
+}

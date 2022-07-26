@@ -1,0 +1,79 @@
+
+/* Start Forgot Password */
+.send-code-page{height: 100vh;}
+
+.send-code-page .data-input {
+    margin-bottom: 35px;
+    padding: 17px !important;
+}
+.send-code-page .form-main-image img{
+    max-width: 100%;
+}
+
+.send-code-page .main-paragraph{
+    margin-bottom: 60px;
+}
+
+.send-code-page .main-paragraph.ar{
+    max-width: 100%;
+}
+@media (max-width:768px){
+
+    .send-code-page .form-main-image{
+        display: none;
+    }
+
+    .send-code-page{
+        text-align: center !important;
+    }
+    .send-code-page .main-title{
+        text-align: center;
+        margin-top: 120px;
+    }
+}
+
+
+
+@media(max-width:768px){
+    .send-code-page .main-title{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .send-code-page.main-paragraph{
+        max-width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:1199px){
+    .send-code-page .image-side {
+        display: none;
+    }
+    .send-code-page .form-side{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .send-code-page .main-paragraph{
+        max-width: 100%;
+        text-align: center;
+    }
+    .send-code-page .main-title{
+        text-align: center;
+    }
+    .send-code-page input[type="submit"]{
+        margin-top: 20px;
+    }
+}
+/* End Forgot Password */
+
+/* Dark Mode Changes */
+.send-code-page.dark{
+    background-color: #111111;
+}
+
+/* Dark Mode Changes */

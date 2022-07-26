@@ -1,0 +1,17 @@
+.breadcrumbs{
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.breadcrumbs ol{
+    color: #aaa;
+    font-size: 18px;
+}
+.breadcrumbs ol svg{
+    font-size: 30px;
+}
+.breadcrumbs .MuiBreadcrumbs-separator{
+    font-size: 25px;
+}
+.breadcrumbs .MuiTypography-root .MuiTypography-body1{
+    font-size: 20px;
+}

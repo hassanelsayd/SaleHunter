@@ -1,0 +1,54 @@
+.unAuth {
+  height: 100vh;
+}
+.not-logged div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.not-logged h2 {
+  text-align: center;
+}
+
+.not-logged p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.not-logged button {
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.5s all;
+}
+.not-logged button:hover {
+  background-color: var(--main-color);
+  border: 2px solid transparent;
+  color: #fff;
+}
+.not-logged .flex-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Handle dark mode */
+.unAuth.dark {
+  background-color: #101010;
+}
+.dark .not-logged {
+  background-color: #1f1f1f;
+  color: #c2c2c2;
+}
+.dark .not-logged button {
+  color: #c2c2c2;
+}
+.dark .not-logged button:hover {
+  color: #fff;
+}

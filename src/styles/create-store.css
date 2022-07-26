@@ -1,0 +1,224 @@
+/* Start create-store-page */
+
+.create-store-page {
+  height: 100vh;
+}
+
+.create-store-page .main-paragraph.ar {
+  max-width: 100%;
+}
+
+.create-store-page .data-input {
+  margin-bottom: 20px;
+}
+.create-store-page .form-main-image img {
+  max-width: 100%;
+}
+
+.create-store-page .image-cover {
+  background: #f8f8f899;
+  margin-bottom: 30px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+.create-store-page .image-cover .cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+  transition: 2s all;
+  object-position: center;
+}
+.create-store-page .image-cover .cover.disable {
+  opacity: 0;
+}
+
+.create-store-page .image {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.create-store-page .image .main-create-store-page-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 1s all;
+}
+.create-store-page .image .main-create-store-page-img.disable {
+  opacity: 0;
+}
+.create-store-page .change-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-store-page .change-photo #upload-photo {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: 333;
+}
+.create-store-page .add-photo-icon {
+  color: #7b77ff;
+  width: 30px;
+  height: 30px;
+}
+
+.create-store-page .inline-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.create-store-page .inline-inputs .form-group {
+  width: 50%;
+  position: relative;
+}
+
+.create-store-page .inline-inputs .data-input {
+  padding: 15px 15px 15px 50px !important;
+}
+
+.input-icon {
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  width: 22px;
+  height: 23px;
+  transform: translateY(-112%);
+  fill: #a3a3a3;
+}
+
+.get-directions-btn {
+  height: 57px;
+  background: transparent;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #b5b7ba;
+}
+.get-directions-btn.location_got {
+  background-color: #38d238;
+  color: #fff;
+  border-color: #38d238;
+  user-select: none;
+  cursor: no-drop;
+}
+
+.get-directions-btn .get-directions-btn-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.get-directions-btn .get-directions-btn-info svg {
+  width: 25px;
+  fill: #676767;
+}
+.get-directions-btn .get-directions-btn-info svg.location_got {
+  fill: #fff;
+}
+
+.create-store-page input[type="button"] {
+  background: #fff;
+  text-align: center;
+  color: #696969;
+  padding: 0 !important;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px 0 rgb(222 222 222 / 16%);
+  border: 2px solid #d5d5d5;
+  font-weight: 600;
+}
+
+/* Loader */
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+@media (max-width: 768px) {
+  .create-store-page .form-main-image {
+    display: none;
+  }
+
+  .create-store-page {
+    text-align: center !important;
+  }
+  .create-store-page .main-title {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .create-store-page .main-paragraph {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .create-store-page .main-title,
+  .create-store-page .main-paragraph {
+    text-align: center;
+  }
+  .create-store-page .main-paragraph {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .create-store-page .image-side {
+    display: none;
+  }
+  .create-store-page .form-side {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* End create-store-page */
+
+/* Dark Mode Changes */
+.create-store-page.dark {
+  background-color: #111111;
+}
+.create-store-page.dark .get-directions-btn {
+  color: #a1a1a1;
+}
+.create-store-page.dark .get-directions-btn.location_got {
+  color: #fff;
+}
+/* Dark Mode Changes */

@@ -1,0 +1,32 @@
+.spinner3-container {
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner3-container .sp3 {
+  width: 7rem;
+  height: 7rem;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 6px solid #bbb;
+  border-left-color: rgb(68, 90, 255);
+  border-left-width: 9px;
+  animation: spinner3 1s linear infinite;
+}
+
+@keyframes spinner3 {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

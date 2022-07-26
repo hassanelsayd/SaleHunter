@@ -1,0 +1,18 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.41 34.64">
+  <title>qr icon</title>
+  <g>
+    <rect x="0.75" y="0.75" width="14.94" height="14.94" rx="2.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect x="6.27" y="6.27" width="3.91" height="3.91" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
+  </g>
+  <g>
+    <rect x="18.72" y="0.75" width="14.94" height="14.94" rx="2.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect x="24.23" y="6.27" width="3.91" height="3.91" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
+  </g>
+  <g>
+    <rect x="0.75" y="18.95" width="14.94" height="14.94" rx="2.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect x="6.27" y="24.46" width="3.91" height="3.91" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
+  </g>
+  <rect x="18.72" y="19.42" width="6.18" height="14" rx="1.58" fill="#fff"/>
+  <rect x="26.98" y="19.42" width="6.18" height="6.18" rx="1.58" fill="#fff"/>
+  <rect x="26.98" y="27.24" width="6.18" height="6.18" rx="1.58" fill="#fff"/>
+</svg>

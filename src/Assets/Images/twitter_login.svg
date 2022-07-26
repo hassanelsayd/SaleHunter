@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123.892" height="123.892" viewBox="0 0 123.892 123.892">
+  <defs>
+    <filter id="Rectangle" x="0" y="0" width="123.892" height="123.892" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#606470" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="twitter_login" transform="translate(30 26)">
+    <g transform="matrix(1, 0, 0, 1, -30, -26)" filter="url(#Rectangle)">
+      <path id="Rectangle-2" data-name="Rectangle" d="M31.447,0h1C49.813,0,63.892,14.3,63.892,31.946S49.813,63.892,32.445,63.892h-1C14.079,63.892,0,49.59,0,31.946S14.079,0,31.447,0Z" transform="translate(30 26)" fill="#fff"/>
+    </g>
+    <g id="Group_1014" data-name="Group 1014" transform="translate(15.725 16)">
+      <g id="Gmail">
+        <g id="Group_1013" data-name="Group 1013" transform="translate(0 0)">
+          <rect id="Rectangle_1656" data-name="Rectangle 1656" width="32" height="32" fill="none"/>
+          <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M26.615,9.385c.019.264.019.527.019.791,0,8.037-6.117,17.3-17.3,17.3A17.181,17.181,0,0,1,0,24.744a12.578,12.578,0,0,0,1.468.075,12.176,12.176,0,0,0,7.548-2.6,6.09,6.09,0,0,1-5.684-4.216A7.667,7.667,0,0,0,4.48,18.1a6.43,6.43,0,0,0,1.6-.207A6.081,6.081,0,0,1,1.2,11.926v-.075a6.123,6.123,0,0,0,2.748.772A6.089,6.089,0,0,1,2.07,4.491a17.281,17.281,0,0,0,12.536,6.362,6.863,6.863,0,0,1-.151-1.393A6.086,6.086,0,0,1,24.978,5.3a11.97,11.97,0,0,0,3.859-1.468,6.063,6.063,0,0,1-2.673,3.35,12.188,12.188,0,0,0,3.5-.941,13.069,13.069,0,0,1-3.049,3.143Z" transform="translate(1.389 0.015)" fill="#1da1f2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

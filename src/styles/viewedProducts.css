@@ -1,0 +1,42 @@
+
+.viewed-products thead{
+    background:#8543ff
+}
+.viewed-products thead th{
+    color:#fff;
+    font-size: 18px;
+}
+.viewed-products .table{
+    padding-bottom: 40px;
+    background-color: transparent !important;
+}
+
+.viewed-products tbody tr:hover{
+    background-color: #c7d2ff;
+    cursor: pointer;
+}
+.viewed-products th{
+    border-width: 0;
+}
+.viewed-products td{
+    font-size: 17px;
+    border-width: 0;
+}
+
+/* Dark mode Changes */
+
+.viewed-products.dark .page-title{
+    color: #bbb;
+} 
+.viewed-products.dark td{
+    color: #bbb;
+}
+.viewed-products.dark tbody tr:hover{
+    background-color: #101010;
+
+}
+
+.viewed-products.dark thead{
+    background: #212121;
+    border: 0;
+}

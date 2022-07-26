@@ -1,0 +1,71 @@
+.no-store {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.no-store div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-store h2 {
+  font-size: 32px;
+  letter-spacing: 0.6;
+  text-align: center;
+}
+.no-store p {
+  font-size: 20px;
+  max-width: 75%;
+  text-align: center;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+.no-store button {
+  border: 2px solid var(--main-color);
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #666;
+  transition: 0.5s all;
+}
+
+.no-store button:hover {
+  border: 2px solid transparent;
+  background: var(--main-color);
+  color: #fff;
+}
+
+.no-store img {
+  max-width: 60%;
+  border-radius: 9px;
+}
+
+@media (max-width: 767px) {
+  .no-store img {
+    max-width: 80%;
+  }
+  .no-store h2 {
+    font-size: 25px;
+  }
+  .no-store p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
+
+/* Handle dark mode */
+.dark .no-store h2,
+.dark .no-store p,
+.dark .no-store button {
+  color: #c2c2c2;
+}
+.dark .no-store button:hover {
+  color: #fff;
+}

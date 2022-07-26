@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.filter {
+  width: 22% !important;
+  overflow: hidden;
+}
+
+.filter ::-webkit-scrollbar {
+  display: inline-block;
+}
+
+.filter-items,
+.catigories-list {
+  max-height: 180px;
+  overflow-y: scroll;
+}
+
+.filter .hidden {
+  display: none;
+}
+
+.filter .main-header {
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: "Raleway";
+  margin-bottom: 25px;
+}
+.filter .close-btn {
+  display: none;
+}
+.filter .wrapper {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  border: solid 2px #eee;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.filter .wrapper .filter-title {
+  position: relative;
+  margin: 10px 0;
+}
+.filter .wrapper .filter-title .icon {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.filter .wrapper .filter-title.ar .icon {
+  right: unset;
+  left: 0;
+}
+.filter .wrapper h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+}
+.filter .wrapper .ar h2 {
+  letter-spacing: normal;
+}
+.filter .wrapper .filter-item {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: "Raleway";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+}
+.filter .wrapper .filter-item label {
+  margin-left: 15px;
+  font-size: 16px;
+}
+.filter .wrapper .filter-item .count {
+  margin-left: 5px;
+  color: #c4c4c4;
+}
+
+.filter .wrapper .filter-item .slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.price-range-wraper {
+  padding: 15px 15px 30px 15px !important;
+}
+
+.filter .wrapper .filter-item .slider .price-range {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.filter .wrapper .filter-item .slider .price-range span {
+  background-color: #c4c4c4;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+  background-color: #c4c4c4;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter .wrapper .filter-item .slider .price-range > span {
+  margin-left: -10px;
+}
+.filter .wrapper .filter-item .slider .price-range > span + span {
+  margin-right: -10px;
+}
+
+.filter .MuiSvgIcon-root {
+  fill: #ff4f04 !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.filter-slider span[data-index="0"],
+.filter-slider span[data-index="1"],
+.filter-slider span:nth-of-type(2) {
+  color: #ff4f04 !important;
+}
+
+.catigories-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FILTER RADIO */
+
+.ar .filter .radio-filter label {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Sort Btn */
+.sort-btn {
+  border: 1px solid rgb(130, 130, 130);
+  width: fit-content !important;
+  height: 42px;
+  color: rgb(130, 130, 130) !important;
+  border-radius: 22px !important;
+  padding: 0px 30px 0 10px !important;
+}
+
+.ar .sort-btn {
+  padding: 0px 10px 0 30px !important;
+}
+
+.ar .sort-btn svg {
+  right: unset !important;
+  left: 7px !important;
+}
+
+.sort-btn fieldset {
+  border: 0px !important;
+}
+
+/* dark mode changes */
+.dark .filter .wrapper .filter-title.ar .icon svg,
+.dark .filter .radio-filter label,
+.dark .filter .wrapper h2 {
+  color: #bbb;
+}
+
+.dark .filter .MuiSvgIcon-root {
+  fill: #6460ff !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.dark .filter-slider span[data-index="0"],
+.dark .filter-slider span[data-index="1"],
+.dark .filter-slider span:nth-of-type(2) {
+  color: #6460ff !important;
+}
+.dark .filter .wrapper .filter-item .slider .price-range span {
+  background-color: #1a1a1a;
+}
+
+.dark .filter .wrapper {
+  border: solid 2px #646464;
+}
+.dark .filter .main-header {
+  color: #bbb;
+}

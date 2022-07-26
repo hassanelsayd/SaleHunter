@@ -1,0 +1,78 @@
+.page-title{
+    padding:0 0 20px 0;
+    font-size: 27px;
+    font-weight: 600;
+}
+.favourites .products-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.favourites .products-flex .product{
+    max-width: 239px;
+    margin-bottom: 15px;
+}
+.favourites .page-placeholder{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap:5%;
+    flex-direction: column;
+}
+.favourites .page-placeholder .ar{
+    text-align: center !important; 
+}
+.favourites .page-placeholder img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.favourites .page-placeholder .page-placeholder-info{
+    text-align: center;
+}
+
+.favourites .page-placeholder .page-placeholder-info h2{
+    color: #5651ff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.favourites .page-placeholder .page-placeholder-info p{
+    margin: 0 auto;
+    max-width: 60%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .favourites .page-placeholder .page-placeholder-info p{
+        max-width: 80%;
+        font-size: 16px;
+    }
+    .favourites .page-placeholder .page-placeholder-info h2{
+        font-size: 20px;
+    }
+    .favourites .page-placeholder img{
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .favourites .page-placeholder .page-placeholder-info p{
+        max-width: 80%;
+    }
+    .favourites .page-placeholder img{
+        width: 70%;
+    }
+}
+
+
+/* Dark mode changes */
+
+
+.favourites.dark .page-title,
+.favourites.dark .page-placeholder .page-placeholder-info p
+{
+    color: #bbb;
+}

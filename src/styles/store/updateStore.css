@@ -1,0 +1,356 @@
+.update-store {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-store-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.update-store-box {
+  background-color: #fff;
+  box-shadow: 0px 1px 5px #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 1001;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.update-store form .flex-input > div {
+  position: relative;
+}
+
+.update-store .spinner-container {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.update-store .image {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+.update-store .image .main-update-store-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 1s all;
+}
+.update-store .image .main-update-store-img.disable {
+  opacity: 0;
+}
+.update-store .change-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update-store .change-photo #upload-photo {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: 333;
+}
+.update-store .add-photo-icon {
+  color: #7b77ff;
+  width: 30px;
+  height: 30px;
+}
+.update-store .image {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+.update-store .image .main-update-store-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 1s all;
+}
+.update-store .image .main-update-store-img.disable {
+  opacity: 0;
+}
+.update-store .change-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update-store .change-photo #upload-photo {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: 333;
+}
+.update-store .add-photo-icon {
+  color: #7b77ff;
+  width: 30px;
+  height: 30px;
+}
+
+.update-store .store-type {
+  margin-bottom: 15px;
+}
+
+.update-store-box .data-input {
+  font-size: 16px !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+}
+
+.update-store .flex-input {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.update-store-box .close-update-box {
+  background-color: #eee;
+  height: 51px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.update-store-box input[type="submit"] {
+  border-radius: 8px;
+}
+
+.update-store .get-directions-btn {
+  height: 45px;
+  border-radius: 8px;
+}
+
+.update-store .get-directions-btn .get-directions-btn-info {
+  font-size: 18px !important;
+}
+
+.social-media {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 33;
+  transition: 0.5s;
+  transform: translateX(-100%);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media input[type="submit"] {
+  width: 100%;
+  padding: 14px 0 !important;
+  border-radius: 8px;
+}
+.social-media form {
+  flex: 1;
+}
+.social-media .update-links {
+  background-image: linear-gradient(to left, #8743ff, #4136f1);
+  padding: 15px 0;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.social-media.active {
+  transform: translateX(0);
+}
+
+.social-media .input-container {
+  margin: 10px 0;
+  position: relative;
+}
+
+.flex-btns {
+  display: flex;
+  margin: 10px 0;
+  gap: 5px;
+}
+
+.flex-btns div {
+  flex: 1;
+  cursor: pointer;
+}
+
+.flex-btns .social-media-update-button {
+  background-color: #858ec9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#root
+  > div
+  > div
+  > div.container
+  > div.update-store
+  > div.update-store-box
+  > form
+  > div:nth-child(3) {
+  position: relative;
+}
+
+/* Error modal start */
+.error-modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  background-color: #fff;
+  z-index: 50;
+  gap: 20px;
+}
+.error-modal svg {
+  width: 130px;
+  color: var(--secondary-color);
+}
+.error-modal h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 25px;
+  margin: 0;
+}
+.error-modal p {
+  margin: -12px;
+  font-size: 17px;
+}
+.error-modal button {
+  background-color: transparent;
+  width: fit-content;
+  padding: 8px 10px;
+  border: 3px solid var(--main-color);
+  border-radius: 4px;
+  font-size: 18px;
+  color: var(--main-color);
+  font-weight: 600;
+  transition: 0.5s all;
+  margin-top: 15px;
+}
+
+.error-modal button:hover {
+  background-color: var(--main-color);
+  border: 3px solid transparent;
+  color: #fff;
+}
+/* Error modal end */
+
+@media (max-width: 767px) {
+  .update-store .flex-btns {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .update-store .update-store-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: scroll;
+  }
+  .update-store .update-store-box input,
+  .update-store .update-store-box textarea {
+    margin-bottom: 15px;
+    padding: 15px 10px !important;
+  }
+  .get-directions-btn {
+    padding: 10px 10px;
+    max-height: 50px !important;
+  }
+  .flex-btns .social-media-update-button {
+    padding: 10px 10px;
+    min-height: 50px !important;
+  }
+
+  .flex-btns {
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  .flex-btns input[type="submit"] {
+    margin-bottom: 0 !important;
+  }
+  .flex-btns .close-box {
+    order: 2;
+  }
+}
+
+/* Handle dark mode */
+.dark .update-store-box,
+.dark .social-media,
+.dark .update-store .spinner-container {
+  background: #2d2d2d;
+  box-shadow: none;
+}
+.dark .update-store .get-directions-btn,
+.dark .social-media .input-container {
+  color: #fff;
+}
+.dark .get-directions-btn .get-directions-btn-info svg {
+  fill: #fff;
+}

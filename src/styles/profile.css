@@ -1,0 +1,218 @@
+/* Start Profile */
+.profile{height: 100vh;}
+
+.profile .data-input {
+    margin-bottom: 20px;
+}
+.profile .form-main-image img{
+    max-width: 100%;
+}
+
+.profile .image-cover{
+    background: #f8f8f899;
+    margin-bottom: 30px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.profile .image-cover .cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+    transition: 2s all;
+    object-position: center;
+}
+.profile .image-cover .cover.disable{
+   opacity: 0;
+}
+
+.profile .image{
+    background-color: #eee;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.profile .image .main-profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 1s all;
+
+}
+.profile .image .main-profile-img.disable{
+    opacity: 0;
+}
+.profile .change-photo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 30;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .change-photo #upload-photo{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 333;
+}
+.profile .add-photo-icon{
+    color: #7b77ff;
+    width: 30px;
+    height: 30px;
+}
+
+.profile .password-input span{
+    display: flex;
+    justify-content: flex-end;
+    color:#FF4F04;
+    font-weight: 700;
+    cursor: pointer;
+}
+.profile .password-input span.ar{
+    justify-content: flex-start;
+}
+
+
+.edit-profile{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-image: linear-gradient(to left, #8743ff, #4136f1);
+    color: #fff;
+    margin-top: 15px;
+}
+.edit-profile.ar{
+    text-align: center;
+}
+.profile .create-store{
+    max-width: 380px;
+    display: flex;
+    padding: 15px 10px;
+    border: 2px solid #ff4f04;
+    border-radius: 20px;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.profile .create-store::before{
+    content: "";
+    left: 50px;
+    top: 127px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ff4f04;
+    z-index: 2;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.profile .create-store:hover h2{
+    color: #fff !important;
+}
+.profile .create-store:hover p{
+    color: #fff !important;
+}
+.profile .create-store:hover::before{
+    top: 0;
+    left:0;
+    opacity: 1;
+}
+
+.profile .create-store .store-icon{
+    width: 130px;
+    z-index: 3;
+}
+.profile .create-store .store-icon path{
+    fill: #ff4f04;
+    transition: 1s all;
+}
+.profile .create-store:hover .store-icon path{
+    fill: #fff;
+}
+.profile .create-store .create-store-info{
+    z-index: 3;
+}
+.profile .create-store .create-store-info h2{
+    color: #ff4f04;
+    transition: 0.6s all;
+}
+.profile .create-store .create-store-info p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #585757;
+    transition: 0.7s all;
+}
+
+@media (max-width:768px){
+
+    .profile .form-main-image{
+        display: none;
+    }
+
+    .profile{
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:1199px){
+    .profile .image-side {
+        display: none;
+    }
+    .profile .form-side{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* End Profile */
+
+/* Dark Mode Changes */
+.profile.dark{
+    background-color: #111111;
+}
+
+.dark .image-cover{
+    background-color: #202020;
+}
+
+.dark .image-cover .cover{
+    opacity: 0.7;
+}
+
+
+/* Dark Mode Changes */
+

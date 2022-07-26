@@ -1,0 +1,274 @@
+/* Start update-profile */
+.update-profile{height: 100vh;}
+
+.update-profile .data-input {
+    margin-bottom: 20px;
+}
+.update-profile .form-main-image img{
+    max-width: 100%;
+}
+
+.go-back {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: rgb(160 160 160);
+    cursor: pointer;
+    width: 100%;
+}
+.go-back.ar{
+    direction: ltr;
+    justify-content: flex-end;
+}
+.go-back svg{
+    width: 30px;
+}
+.go-back span{
+    font-size: 18px;
+}
+.update-profile .image-cover{
+    background: #f8f8f899;
+    margin-bottom: 30px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.update-profile .image-cover .cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+    transition: 2s all;
+    object-position: center;
+}
+.update-profile .image-cover .cover.disable{
+   opacity: 0;
+}
+
+.update-profile .image{
+    background-color: #eee;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.update-profile .image .main-update-profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 1s all;
+
+}
+.update-profile .image .main-update-profile-img.disable{
+    opacity: 0;
+}
+.update-profile .change-photo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 30;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.update-profile .change-photo #upload-photo{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 333;
+}
+.update-profile .add-photo-icon{
+    color: #7b77ff;
+    width: 30px;
+    height: 30px;
+}
+
+.update-profile .password-input span{
+    display: flex;
+    justify-content: flex-end;
+    color:#FF4F04;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.update-profile .create-store{
+    max-width: 380px;
+    display: flex;
+    padding: 15px 10px;
+    border: 2px solid #ff4f04;
+    border-radius: 20px;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.update-profile .create-store::before{
+    content: "";
+    left: 50px;
+    top: 127px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ff4f04;
+    z-index: 2;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.update-profile .create-store:hover h2{
+    color: #fff !important;
+}
+.update-profile .create-store:hover p{
+    color: #fff !important;
+}
+.update-profile .create-store:hover::before{
+    top: 0;
+    left:0;
+    opacity: 1;
+}
+
+.update-profile .create-store .store-icon{
+    width: 130px;
+    z-index: 3;
+}
+.update-profile .create-store .store-icon path{
+    fill: #ff4f04;
+    transition: 1s all;
+}
+.update-profile .create-store:hover .store-icon path{
+    fill: #fff;
+}
+.update-profile .create-store .create-store-info{
+    z-index: 3;
+}
+.update-profile .create-store .create-store-info h2{
+    color: #ff4f04;
+    transition: 0.6s all;
+}
+.update-profile .create-store .create-store-info p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #585757;
+    transition: 0.7s all;
+}
+.verify-email-container{
+    display: none;
+}
+
+.verify-email{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    z-index: 3000;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 15px;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 5px;
+    min-width: 280px
+}
+.verify-email .close{
+    position: absolute;
+    width: 35px;
+    left: 20px;
+    top: 25px;
+    color: #777;
+    cursor: pointer;
+}
+.verify-email img{
+    width: 40%;
+}
+
+.verify-email form{
+    width: 100%;
+}
+.verify-email .token-input{
+    width: 100%;
+    border: none;
+    padding: 9px 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.verify-email .token-input:focus{
+    outline: none;
+}
+
+.verify-email input[type="submit"]{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px !important;
+    margin-top: 10px;
+}
+
+@media (max-width:768px){
+
+    .update-profile .form-main-image{
+        display: none;
+    }
+
+    .update-profile{
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:1199px){
+    .update-profile .image-side {
+        display: none;
+    }
+    .update-profile .form-side{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+/* End update-profile */
+
+/* Dark Mode Changes */
+.update-profile.dark{
+    background-color: #111111;
+}
+
+.dark .image-cover{
+    background-color: #202020;
+}
+
+.dark .image-cover .cover{
+    opacity: 0.7;
+}
+
+
+/* Dark Mode Changes */
+
+.dark .verify-email{
+    background-color: #222;
+    color: #fff;
+}

@@ -1,0 +1,79 @@
+body , html{
+    scroll-behavior: smooth;
+  }
+
+
+.h-scroll{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products-slider{
+    position: absolute;
+    width: 100%;
+    min-height: 320px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 5px;
+}
+.products-slider.active{
+    cursor: grabbing;
+}
+
+.h-scroll .buttons{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.h-scroll .buttons button{
+    width: 40px;
+    border: none;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.418);
+    
+}
+
+.h-scroll .buttons svg{
+    width: 25px;
+    color: #555;
+}
+
+.h-scroll .scroll__left{
+    position: absolute;
+    left: -5px;
+}
+
+.h-scroll .scroll__left.disabled{
+    display: none !important;
+}
+
+.h-scroll .scroll__right{
+    position: absolute;
+    right: -5px;
+}
+.h-scroll .scroll__right.disabled{
+    display: none !important;
+}
+
+.h-scroll .spinner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,143 @@
+.settings-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+/* Apperance section */
+.settings .settings-apperance{
+    width: 100%;
+}
+.settings .settings-apperance .settings-apperance-options{
+    display: flex;
+    gap:10px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.settings .settings-apperance .settings-apperance-options .settings-apperance-image{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.settings .settings-apperance .settings-apperance-options .settings-apperance-image span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    text-align: center !important;
+}
+
+.settings .settings-apperance .settings-apperance-options img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.settings .settings-apperance .settings-apperance-options .settings-apperance-image.active img{
+    border: 2px solid var(--secondary-color)
+}
+
+
+.settings .settings-apperance .settings-apperance-options .settings-apperance-image.active span{
+    color: var(--secondary-color) !important
+}
+
+
+.settings .settings-apperance .settings-apperance-options .settings-apperance-image:hover img{
+    border: 2px solid var(--secondary-color)
+}
+
+.settings .settings-apperance .settings-apperance-options .settings-apperance-image:hover span{
+    color: var(--secondary-color) !important
+}
+
+/* Language section */
+.settings .settings-language .settings-language-options{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings .settings-language .settings-language-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings .settings-language .settings-language-option input{transform: scale(1.6);}
+.settings .settings-language .settings-language-option label{ font-size: 18px;}
+
+/* Data section */
+.settings .settings-data{
+    padding: 20px 0;
+}
+
+.settings .settings-data-options{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.settings .settings-data-option{
+    width: fit-content;
+    padding: 5px 10px;
+    color:#fff !important;
+    border:none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+/* Dark Mode Changes */
+
+.settings.dark .settings-apperance .settings-apperance-options .settings-apperance-image span,
+.dark .settings-title,
+.settings.dark .settings-language .settings-language-option label
+{
+    color: #bbb;
+}
+
+.settings.dark .settings-apperance .settings-apperance-options img{
+    border-color: #101010;
+}
+
+
+/* ------------------------------------------ */
+
+/* Start Forgot Password */
+
+.settings .form-main-image img{
+    max-width: 100%;
+}
+
+.settings .align-vertical{
+    height: 80vh;
+}
+@media (max-width:768px){
+
+    .settings .form-main-image{
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1199px){
+    .settings .image-side {
+        display: none;
+    }
+    .settings .form-side{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Dark Mode Changes */
